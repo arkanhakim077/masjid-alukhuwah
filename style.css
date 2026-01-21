@@ -11,18 +11,17 @@ body {
 
 /* HEADER */
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   background-color: #1b5e20;
-  color: white;
   padding: 15px 25px;
+  color: white;
 }
 
+/* LOGO KIRI */
 header-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  justify-self: start;
 }
 
 logo {
@@ -30,16 +29,23 @@ logo {
   height: auto;
 }
 
-header h1 {
-  font-size: 20px;
+/* JUDUL TENGAH */
+site-title {
+  justify-self: center;
   margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* MENU KANAN */
+.nav {
+  justify-self: end;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   margin-left: 15px;
-  font-weight: bold;
 }
 
 nav a:hover {
@@ -97,6 +103,7 @@ footer {
     margin-right: 15px;
   }
 }
+
 
 
 
