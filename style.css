@@ -10,12 +10,18 @@ body {
 }
 
 /* HEADER */
-header {
-  background-color: #1b5e20;
-  color: white;
-  padding: 20px;
-  text-align: center;
+header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
+
+logo {
+  width: 60px;
+  height: auto;
+}
+
 
 nav {
   margin-top: 10px;
@@ -73,3 +79,4 @@ footer {
     margin: 8px 0;
   }
 }
+
